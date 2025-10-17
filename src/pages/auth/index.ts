@@ -1,0 +1,5 @@
+export { default as LoginPage} from "./login"
+export { default as ResetPasswordPage} from "./resetPassword"
+export { default as ForgetPasswordPage} from "./forgetPassword1"
+export { default as ForgetPasswordPage2} from "./forgetPassword2"
+export { default as AuthNotFound} from "./notFound"
