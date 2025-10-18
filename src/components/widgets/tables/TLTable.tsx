@@ -8,15 +8,15 @@ export function TestimonialsTable() {
         ["Argon", "WebApp", "+44 987 5674", "", ""],
         ["Meta", "Meta AI", "+1 654 555 432", "", ""],
         ["Tesla", "Micro Chip", "+66 7897 9876", "", ""],
-        ["Microsoft", "Embedded system", "+234 808 556 986 ", "", ""],
-        ["Microsoft", "Embedded system", "+234 808 556 986 ", "", ""],
-        ["Microsoft", "Embedded system", "+234 808 556 986 ", "", ""],
+        ["Microsoft", "Embedded system", "+234 808 556 986", "", ""],
+        ["Microsoft", "Embedded system", "+234 808 556 986", "", ""],
+        ["Microsoft", "Embedded system", "+234 808 556 986", "", ""],
         ["Argon", "WebApp", "+44 987 5674", "", ""],
         ["Meta", "Meta AI", "+1 654 555 432", "", ""],
         ["Tesla", "Micro Chip", "+66 7897 9876", "", ""],
-        ["Microsoft", "Embedded system", "+234 808 556 986 ", "", ""],
-        ["Microsoft", "Embedded system", "+234 808 556 986 ", "", ""],
-        ["Microsoft", "Embedded system", "+234 808 556 986 ", "", ""],
+        ["Microsoft", "Embedded system", "+234 808 556 986", "", ""],
+        ["Microsoft", "Embedded system", "+234 808 556 986", "", ""],
+        ["Microsoft", "Embedded system", "+234 808 556 986", "", ""],
     ]
 
     return (
