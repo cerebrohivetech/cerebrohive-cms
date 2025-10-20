@@ -9,7 +9,7 @@ import { AuthLayout, DashboardLayout } from "../components/layout";
 export default function AppRouter() {
     const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/cerebrohive-cms',
         children: [
             {
                 Component: DashboardLayout,
@@ -28,7 +28,7 @@ export default function AppRouter() {
                 Component: AuthLayout,
                 children: [
                     { 
-                        path: '/auth',
+                        path: 'auth',
                         children: [
                             {index: true, loader: AppLoader, Component: LoginPage },
                             { path: 'forgot-password', Component: ForgetPasswordPage },
