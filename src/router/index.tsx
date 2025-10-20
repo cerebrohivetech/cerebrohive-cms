@@ -9,33 +9,40 @@ import { AuthLayout, DashboardLayout } from "../components/layout";
 export default function AppRouter() {
     const router = createBrowserRouter([
     {
-        Component: DashboardLayout,
+        path: '/',
         children: [
-            { index: true, path: 'dashboard', Component: Dashboard },
             {
-                path: "testimonials", 
-                Component: Testimonials,
+                Component: DashboardLayout,
                 children: [
-                    {path: "create-new", element: <h1>Hello world</h1>}
+                    { index: true, Component: Dashboard },
+                    {
+                        path: "testimonials", 
+                        Component: Testimonials,
+                        children: [
+                            {path: "create-new", element: <h1>Hello world</h1>}
+                        ]
+                    }
                 ]
-            }
-        ]
-    },
-    {
-        Component: AuthLayout,
-        children: [
-            { 
-                path: '/auth',
+            },
+            {
+                Component: AuthLayout,
                 children: [
-                    {index: true, loader: AppLoader, Component: LoginPage },
-                    { path: 'forgot-password', Component: ForgetPasswordPage },
-                    { path: 'reset-link', Component: ForgetPasswordPage2 },
-                    { path: 'reset-password', Component: ResetPasswordPage },
-                    { path: "*", Component: AuthNotFound }
+                    { 
+                        path: '/auth',
+                        children: [
+                            {index: true, loader: AppLoader, Component: LoginPage },
+                            { path: 'forgot-password', Component: ForgetPasswordPage },
+                            { path: 'reset-link', Component: ForgetPasswordPage2 },
+                            { path: 'reset-password', Component: ResetPasswordPage },
+                            { path: "*", Component: AuthNotFound }
+                        ]
+                    },
                 ]
             },
         ]
     },
+    
+    
     {
         path: '*',
         Component: AuthNotFound
