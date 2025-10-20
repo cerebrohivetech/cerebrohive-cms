@@ -15,14 +15,14 @@ import { UserAccount } from "./userAccount";
 
 export function Navbar() {
     const navlist: NavbarLinkProps[] = [
-        {icon: DashboardIcon, href: '/dashboard', title: "Dashboard"},
-        {icon: QouteIcon, href: '/qoute', title: "Qoute"},
-        {icon: ProductIcon, href: '/products', title: "Product"},
-        {icon: PortfolioIcon, href: '/portfolio', title: "Portfolio"},
-        {icon: TestimonialIcon, href: '/testimonials', title: "Testinonials"},
-        {icon: BrandIcon, href: '/brands', title: "Brands"},
-        {icon: TeamIcon, href: '/team', title: "Team"},
-        {icon: BlogIcon, href: '/blog', title: " Blog"},
+        {icon: DashboardIcon, href: '/cerebrohive-cms/', title: "Dashboard"},
+        {icon: QouteIcon, href: '/cerebrohive-cms/quote', title: "Quote"},
+        {icon: ProductIcon, href: '/cerebrohive-cms/products', title: "Product"},
+        {icon: PortfolioIcon, href: '/cerebrohive-cms/portfolio', title: "Portfolio"},
+        {icon: TestimonialIcon, href: '/cerebrohive-cms/testimonials', title: "Testimonials"},
+        {icon: BrandIcon, href: '/cerebrohive-cms/brands', title: "Brands"},
+        {icon: TeamIcon, href: '/cerebrohive-cms/team', title: "Team"},
+        {icon: BlogIcon, href: '/cerebrohive-cms/blog', title: " Blog"},
     ]
 
     return (
