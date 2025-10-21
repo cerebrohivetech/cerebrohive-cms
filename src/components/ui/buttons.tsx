@@ -6,6 +6,8 @@ import { Image } from "./image";
 export type IconProp = {
     src: string
     alt: string
+    side?: "left" | "right"
+    className?: string
 }
 
 type ButtonProp = {
@@ -27,17 +29,24 @@ export function Button({type, className, children, icon, loading, variant, onCli
         <button 
             type={type} 
             disabled={loading} 
-            className={`flex justify-center items-center py-[10px] gap-1 ${variants} ${sizes} ${className? className: ''}`}
+            className={`flex justify-center items-center py-[10px] gap-2 ${variants} ${sizes} ${className? className: ''}`}
             onClick={onClick}
         >
-            { icon && 
+            { icon && icon.side === 'left' && 
                 <Image
                     src={icon.src}
                     alt={icon.alt}
-                    className="w-[24px] h-[24px]"
+                    className={`w-[24px] h-[24px] ${icon.className? icon.className: ""}`}
                 />
             }
             {children}
+            { icon && icon.side === 'right' && 
+                <Image
+                    src={icon.src}
+                    alt={icon.alt}
+                    className={`w-[24px] h-[24px] ${icon.className? icon.className: ""}`}
+                />
+            }
         </button>
     )
 }
@@ -48,7 +57,7 @@ export function FilterButton ({onClick, show}: {onClick: () => void, show: boole
         <Button 
             type="button" 
             size="medium" 
-            icon={{src: CalenderIcon, alt: "calender"}}
+            icon={{src: CalenderIcon, alt: "calender", side: "left"}}
             variant="dark"
             onClick={onClick}
             className="relative"
@@ -71,7 +80,7 @@ export function AddNewButton() {
         <Button 
             type="button" 
             size="medium"
-            icon={{src: PlusIcon, alt: "add new"}}
+            icon={{src: PlusIcon, alt: "add new", side: "left"}}
             className='active:scale-[0.769] transition-all duration-300'
         >
             New

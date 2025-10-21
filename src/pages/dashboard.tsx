@@ -5,6 +5,7 @@ export default function Dashboard() {
 
     return (
         <>
+            <title>Dashboard</title>
             <Header title="Dashboard"/>
             <Chart />
             {() => ''}

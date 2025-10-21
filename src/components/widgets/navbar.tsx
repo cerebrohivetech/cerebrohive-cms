@@ -16,7 +16,7 @@ import { UserAccount } from "./userAccount";
 export function Navbar() {
     const navlist: NavbarLinkProps[] = [
         {icon: DashboardIcon, href: '/cerebrohive-cms/', title: "Dashboard"},
-        {icon: QouteIcon, href: '/cerebrohive-cms/quote', title: "Quote"},
+        {icon: QouteIcon, href: '/cerebrohive-cms/quotes', title: "Quote"},
         {icon: ProductIcon, href: '/cerebrohive-cms/products', title: "Product"},
         {icon: PortfolioIcon, href: '/cerebrohive-cms/portfolio', title: "Portfolio"},
         {icon: TestimonialIcon, href: '/cerebrohive-cms/testimonials', title: "Testimonials"},

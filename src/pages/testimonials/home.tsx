@@ -5,6 +5,7 @@ export default function Testimonial() {
 
     return (
         <>
+            <title>Testimonials</title>
             <Header title="Testimonials"/>
             <TestimonialsTable />
         </>
